@@ -23,13 +23,6 @@ A **professional digital stopwatch web application** built using **HTML, CSS, an
 
 ---
 
-## Usage
-
-1. Open `index.html` in a web browser.  
-2. Use the buttons to **start**, **pause**, **reset**, or **record lap times**.  
-
----
-
 ## Author
 
 **Kanishka Sharma**  
