@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* keep page gradient */
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
@@ -14,7 +14,7 @@ body {
   padding: 40px 60px;
   border-radius: 30px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-  width: 350px;
+  width: 450px; /* increased width to fit all buttons */
 }
 
 h1 {
@@ -24,15 +24,15 @@ h1 {
 
 /* Circle Style */
 .stopwatch-circle {
-  width: 280px; /* bigger circle */
+  width: 280px;
   height: 280px;
-  border: 12px solid #ffb28c; /* peachy border */
+  border: 12px solid #ffb28c;
   border-radius: 50%;
   margin: 0 auto 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #ffe1d6 90%, #ffb28c 100%); /* peachy gradient */
+  background: radial-gradient(circle, #ffe1d6 90%, #ffb28c 100%);
   box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
 }
 
@@ -46,9 +46,12 @@ h1 {
 /* Buttons */
 .controls {
   margin-bottom: 20px;
+  display: flex;         /* arrange buttons in one line */
+  justify-content: center;
+  gap: 10px;             /* spacing between buttons */
+  flex-wrap: wrap;        /* allows wrap if window is too small */
 }
 button {
-  margin: 5px;
   padding: 12px 20px;
   font-size: 16px;
   border: none;
